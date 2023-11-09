@@ -1,7 +1,6 @@
 # Author: Carlo Scarpa
 # Description: Program that helps run both the video compiler and question class to export 10 different YouTube shorts
 import os
-from video_compiler import TriviaVideoGenerator
 from moviepy.editor import *
 import random
 
