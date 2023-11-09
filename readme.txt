@@ -28,6 +28,24 @@ Still needed to work -
         voice over (text2speech)
         music (will probably make a folder similar to backgrounds of trending sounds)
         timer animation
+
+
+
+11/8 -
+5:55PM
+What works:
+        everything from last entry
+        text appears and reveals answer after x time
+        random background is selected
+        works if iterating the list from the csv file
+        wraps question text if too long
+
+Still needs work:
+        bigO is really long (idk if this is fixable)
+        Need to animate text
+        animate timer
+        voice over
+        music
         
 
 Later improvements -
