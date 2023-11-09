@@ -42,7 +42,7 @@ What works:
 
 Still needs work:
         bigO is really long (idk if this is fixable)
-        Need to animate text
+        Need to animate text transition
         animate timer
         voice over
         music

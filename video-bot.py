@@ -58,17 +58,16 @@ class TriviaVideoGenerator:
         
         # Create clips array
         clips = []
-        clips.append(TextClip(Trivia.get_question(), color='white', stroke_color='black', stroke_width=2, fontsize=70, font="Bernard-MT-Condensed", size=(1080,1920), align="center").set_position((0,-700)).set_duration(1).set_start(0))
+        clips.append(TextClip(Trivia.get_question(), color='white', fontsize=70, font="Bernard-MT-Condensed", size=(1080,1920), align="center").set_position((0,-700)).set_duration(1).set_start(0))
 
         # Loop through all options, adjusting their positions accordingly
-        ypos = -500
+        ypos = -400
         for op in Trivia.options:
-            clips.append(TextClip(op, color='white', stroke_color='black', stroke_width=2, fontsize=100, font="Bernard-MT-Condensed", size=(1080,1920), align="center").set_position((0,ypos)).set_duration(1).set_start(0))
+            clips.append(TextClip(op, color='white',  fontsize=100, font="Bernard-MT-Condensed", size=(1080,1920), align="center").set_position((0,ypos)).set_duration(1).set_start(0))
             ypos += 250
 
         # add the answer to the array
-        answer_text = TextClip(Trivia.answer, color='white', stroke_color='black', stroke_width=3, fontsize=200, font="Bernard-MT-Condensed", size=(1080,1920), align="center").set_position((0,0)).set_duration(1).set_start(0)
-
+        answer_text = TextClip(Trivia.answer, color='white', fontsize=200, font="Bernard-MT-Condensed", size=(1080,1920), align="center").set_position((0,0)).set_duration(1).set_start(0)
 
         # The backgrround clip
         background = VideoFileClip(self.background).subclip(0, 1)
